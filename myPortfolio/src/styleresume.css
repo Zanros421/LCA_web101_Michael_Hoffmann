@@ -1,0 +1,32 @@
+header {
+    background-color: #474747;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+span {
+    margin-right: 100px;
+    margin-top: 10px;
+}
+#name {
+    font-size: 35px;
+}
+.summary {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+h2 {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-bottom: 2px solid #474747;
+}
+.left-div {
+    width: 15%;
+    float: left;
+    margin-left: 40px;
+}
+.right-div {
+    width: 80%;
+    float: right;
+}
