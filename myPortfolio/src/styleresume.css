@@ -25,8 +25,21 @@ h2 {
     width: 15%;
     float: left;
     margin-left: 40px;
+    font-size: 16px;
 }
 .right-div {
     width: 80%;
     float: right;
+    font-size: 16px;
+}
+.wrapper > div{
+    background:#eee;
+    padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+    background: #DDD;
+}
+.wrapper {
+    display:grid;
+    grid-template-rows: 50% 50%;
 }
