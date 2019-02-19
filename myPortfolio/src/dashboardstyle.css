@@ -1,27 +1,27 @@
 header {
-    background-color: lightblue;
+    background-color: rgb(4, 145, 192);
     grid-area: header;
 }
 main {
-    background-color: pink;
+    background-color: rgb(168, 21, 46);
     min-height: calc(100vh - 54px);
     grid-area: main;
     padding:5px;
 }
 nav {
-    background-color: lightsalmon;
+    background-color: rgb(14, 230, 104);
     grid-area: nav;
 }
 aside {
-    background-color: lightgreen;
+    background-color: rgb(14, 230, 104);
     grid-area: aside;
 }
 .banner {
-    background-color: lavender;
+    background-color: rgb(18, 18, 192);
     grid-area: banner;
 }
 footer {
-    background-color: khaki;
+    background-color: rgb(138, 132, 83);
     grid-area: footer;
 }
 .container {
