@@ -10,7 +10,12 @@
 <body>
     <div class="container">
         <header>
-            header
+            <p id="demo" onclick="myfunction()">Click Me</p>
+            <script>
+            function myfunction() {
+                document.getElementById("demo").innerHTML="<b>Welcome Mr. Bond!</b>";
+            }
+            </script>
         </header>
             <nav>
                   <ul>
@@ -20,8 +25,8 @@
                   </ul>
                 </nav>
             <main>
+                <div id="main">
                 <h1>Main Title</h1>
-                <p>Main content</p>
                 <div id="calculator">
                     <input type="text" class="showing"></input>
                     <input type="button" class="digitButton" value="7">
@@ -49,14 +54,14 @@
                     <div class="seconds">33</div>
                 </div>
                 <div id="calender">
-                    <div class="month">February</div>
-                    <div class="day">Sunday</div>
-                    <div class="day">Monday</div>
-                    <div class="day">Tuesday</div>
-                    <div class="day">Wednesday</div>
-                    <div class="day">Thursday</div>
-                    <div class="day">Friday</div>
-                    <div class="day">Saturday</div>
+                    <div class="month">February 2019</div>
+                    <div class="day">Su</div>
+                    <div class="day">Mo</div>
+                    <div class="day">Tu</div>
+                    <div class="day">We</div>
+                    <div class="day">Th</div>
+                    <div class="day">Fr</div>
+                    <div class="day">Sa</div>
                     <div class="dates"></div>
                     <div class="dates"></div>
                     <div class="dates"></div>
@@ -90,16 +95,18 @@
                     <div class="dates">26</div>
                     <div class="dates">27</div>
                     <div class="dates">28</div>
-                    <div class="dates">29</div>
-                    <div class="dates"></div>
-                    <div class="dates"></div>
-                    <div class="dates"></div>
-                    <div class="dates"></div>
-                    <div class="dates"></div>
-                    <div class="dates"></div>
                     <div class="dates"></div>
                     <div class="dates"></div>
                 </div>
+                <div class="todo">
+                    Firstname:
+                    <input type="text" name="firstname" value="Michael">
+                    Lastname:
+                    <input type="text" name="lastname" value="Hoffmann">
+                    Friend's name:
+                    <input type="text" name="friendname" value="Danny Noonan">
+                </div>
+            </div>
             </main>
             <aside>aside</aside>
             <div class="banner">div.banner</div>
