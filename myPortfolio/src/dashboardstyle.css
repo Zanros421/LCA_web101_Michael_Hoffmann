@@ -8,6 +8,9 @@ main {
     grid-area: main;
     padding:5px;
 }
+h1 {
+  color: #009fc7;
+}
 nav {
     background-color: rgb(14, 230, 32);
     grid-area: nav;
@@ -17,9 +20,9 @@ aside {
     grid-area: aside;
 }
 .banner {
-    background-color: rgb(18, 18, 192);
-    grid-area: banner;
-    color: white;
+  background-color: rgb(18, 18, 192);
+  grid-area: banner;
+  color: white;
 }
 footer {
     background-color: rgb(0, 0, 0);
@@ -58,6 +61,7 @@ footer {
       margin: 5px;
       padding: 5px;
       background-color: #656eeb;
+      color: #eaeaea;
 }
 .mathButton {
     width: 40px;
@@ -101,6 +105,39 @@ footer {
 }
 #demo {
   font-size: 25px;
+}
+#flexcalculator {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  background: #aeaeae;
+  border: 1px solid #333;
+}
+.showing1 {
+  padding: 16px;
+  border: 1px solid #333;
+  width:150px;
+  margin: 5px auto;
+  border-radius: 4px;
+  height: auto;
+}
+.mathflex {
+  width: 40px;
+  margin: 5px;
+  padding: 5px;
+  color: red;
+}
+.flexButton {
+  width: 40px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #656eeb;
+  color: #eaeaea;
 }
 
 @media (min-width: 500px) {
