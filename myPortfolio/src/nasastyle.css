@@ -1,3 +1,20 @@
+body{
+    max-width: 900px;
+    background-color: #eee;
+}
 header {
-    background-image: url(space.jpeg)
+    background-image: url(space.png);
+    padding: 50px;
+}
+.container {
+    display:flex;
+}
+.social {
+    flex:1;
+}
+.office {
+    flex:1;
+}
+.info {
+    flex:1;
 }
