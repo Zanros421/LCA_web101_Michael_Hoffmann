@@ -130,13 +130,14 @@ footer {
   width: 40px;
   margin: 5px;
   padding: 5px;
-  color: red;
+  color: rgb(25, 194, 61);
+  background-color: #000;
 }
 .flexButton {
   width: 40px;
   margin: 5px;
   padding: 5px;
-  background-color: #656eeb;
+  background-color: #0a3b5c;
   color: #eaeaea;
 }
 
