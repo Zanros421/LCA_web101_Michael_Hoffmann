@@ -28,7 +28,7 @@ nav{
     flex-direction: row;
 }
 .pic1 {
-    background-image: url(./img/mainpic.jpeg);
+    background-image: url(../img/mainpic.jpeg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     height:400px;
@@ -55,7 +55,7 @@ p {
     margin: 0 auto;
 }
 .pic2 {
-    background-image: url(./img/cowboy.jpeg);
+    background-image: url(../img/cowboy.jpeg);
     border: 2px solid #000;
     margin: 5px;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ p {
     padding:15px;
 }
 .pic3 {
-    background-image: url(./img/fisher.jpeg);
+    background-image: url(../img/fisher.jpeg);
     border: 2px solid #000;
     margin: 5px;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@ p {
     padding:15px;
 }
 .pic4 {
-    background-image: url(./img/director.jpeg);
+    background-image: url(../img/director.jpeg);
     border: 2px solid #000;
     margin: 5px;
     background-repeat: no-repeat;
@@ -130,7 +130,7 @@ footer{
     }
     .pic1 {
         grid-column: 1/4;
-        background-image: url(./img/mainpic.jpeg);
+        background-image: url(../img/mainpic.jpeg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         height:500px;
@@ -159,7 +159,7 @@ footer{
     .pic2 {
         grid-column:1/2;
         grid-row:2;
-        background-image: url(./img/cowboy.jpeg);
+        background-image: url(../img/cowboy.jpeg);
         border: 2px solid #000;
         margin: 5px;
         background-repeat: no-repeat;
@@ -172,7 +172,7 @@ footer{
     .pic3 {
         grid-column: 2/3;
         grid-row:2;
-        background-image: url(./img/fisher.jpeg);
+        background-image: url(../img/fisher.jpeg);
         border: 2px solid #000;
         margin: 5px;
         background-repeat: no-repeat;
@@ -185,7 +185,7 @@ footer{
     .pic4 {
         grid-column: 3/4;
         grid-row:2;
-        background-image: url(./img/director.jpeg);
+        background-image: url(../img/director.jpeg);
         border: 2px solid #000;
         margin: 5px;
         background-repeat: no-repeat;
