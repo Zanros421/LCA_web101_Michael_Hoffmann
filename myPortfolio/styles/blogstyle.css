@@ -2,23 +2,23 @@ body{
     font-size: 16px;
 }
 header{
-    font-size: 22px;
+    font-size: 43px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 article{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    background-color: rgb(8, 248, 100);
-    color: #fff;
-    margin-top:10px;
-    margin-bottom: 15px;
-    line-height: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 2px solid #000;
-    padding: 10px;
+    font-size: 11px;
+    background-color: rgb(1, 190, 90);
+    color: #336455;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    line-height: 33px;
+    margin-left: 2%;
+    margin-right: 23%;
+    border: 7px solid #039;
+    padding: 1px;
 }
 footer{
-    font-size: 10px;
+    font-size: 6px;
     font-family: 'Times New Roman', Times, serif;
 }
