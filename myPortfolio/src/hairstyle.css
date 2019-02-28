@@ -91,6 +91,9 @@ p {
     text-align: center;
     font-size: 18px;
 }
+footer{
+    background: #000;
+}
 @media (min-width: 568px) {
     .logo{
         width:80%;
