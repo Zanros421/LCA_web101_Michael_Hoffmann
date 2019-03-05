@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="../styles/portfolio.css">
 </head>
 <body>
     <header>
-
+        <h1>Welcome to my mockup webpages.</h1>
     </header>
     <main>
-        <section>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="nasa.html">NASA Landing Page</a>
-            <a href="hair.html">Hairstyle Landing Page</a>
+        <iframe 
+            id="youtube" 
+            src="https://www.youtube.com/embed/xpJ8EoGmLuE" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <section class="listed">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="nasa.html">NASA Landing Page</a></li>
+                <li><a href="hair.html">Hairstyle Landing Page</a></li>
+            </ul>
         </section>
+        <div class="info">
+            <p>Email:</p>
+            <input type="text" class="Email"></br>
+            <p>Name:</p>
+            <input type="text" class="Name"></br>
+            <p>Location:</p>
+            <input type="text" class="Location"></br>
+            <p>Message:</p>
+            <input type="text" class="Message"></br>
+            <input type="reset" value="Reset"></br>
+            <input type="submit" value="Submit">
+        </div>
     </main>
 </body>
 </html>
