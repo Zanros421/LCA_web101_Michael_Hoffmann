@@ -28,7 +28,6 @@ main{
     justify-self:center;
 }
 ul > li {
-    margin:50px;
     list-style-type: none;
 }
 
@@ -48,6 +47,23 @@ a:hover {
 p {
     margin:0;
 }
-.reset {
-    padding:2px;
+@media (min-width:500px) {
+    #youtube {
+        width:560px; 
+        height:315px;
+    }
+}
+@media (min-width:900px) {
+    #youtube {
+        grid-column:1/2;
+        width:600px; 
+        height:350px;
+    }
+    .info {
+        grid-row:1;
+        grid-column:2/3;
+    }
+    .listed {   
+        font-size:18px;
+    }
 }
