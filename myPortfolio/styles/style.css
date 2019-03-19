@@ -56,7 +56,7 @@ body {
     color:rgb(221, 39, 39);
     animation-name:slide;
     animation-duration: 20s;
-    animation-direction:alternate;
+    animation-direction:alternate-reverse;
     animation-timing-function: ease-in-out;
     visibility:hidden;
   }
