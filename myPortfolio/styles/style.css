@@ -50,6 +50,27 @@ body {
     justify-content: flex-end;
     width: 100%;
   }
+  p{
+    justify-self:center;
+    font-size:24px;
+    color:rgb(221, 39, 39);
+    animation-name:slide;
+    animation-duration: 20s;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    visibility:hidden;
+  }
+  @keyframes slide {
+    from {
+      transform: translate3d(1000%, 225%, 0);
+      visibility:visible;
+    }
+    to {
+      transform: translate3d(-225%, -70%, 0);
+      visibility: hidden;
+    }
+  }
+
   
   #profile-pic {
     width: 300px;
