@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../styles/dashboardstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/dashboard.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,13 +19,20 @@
             }
             </script>
         </header>
-            <nav>
-                <ul>
-                <li><a href="#">nav 1</a></li>
-                <li><a href="#">nav 2</a></li>
-                <li><a href="#">nav 3</a></li>
-                </ul>
-            </nav>
+            <div>
+                <div id="list_section">
+                    <h2 id="header">To-do list</h1>
+                    <ul>
+                      <!--<li class="item"></li>-->
+                    </ul>
+                    <div id="newItemButton"><button href="#">new item</button></div>
+                    <form id="newItemForm">
+                      <input type="text" id="itemField" placeholder="Item" />
+                      <input type="submit" id="add" value="add" />
+                    </form>
+                  </div>
+                  <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+                </div>
             <main>
                 <div id="main">
                 <h1>Main Title</h1>
@@ -125,14 +134,6 @@
                 </div>
             </aside>
             <div class="banner">banner                
-                <div class="todo">
-                    Firstname:
-                    <input type="text" name="firstname" value="Michael">
-                    Lastname:
-                    <input type="text" name="lastname" value="Hoffmann">
-                    Friend's name:
-                    <input type="text" name="friendname" value="Danny Noonan">
-                </div>
             </div>
         <footer>
             footer
