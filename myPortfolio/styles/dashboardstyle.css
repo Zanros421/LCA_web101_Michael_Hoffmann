@@ -157,6 +157,7 @@ footer {
     width: 60px;
     border: 5px solid #000000;
     height: 20px;
+    margin-left:1px;
 }
 #clock > div {
     background: #fff;
@@ -239,26 +240,26 @@ footer {
   max-width: 50rem;
   text-align: center;
   color: rgb(103, 177, 202);
-  opacity: .9;
 }
 
 form {
   margin: 2.5rem auto;
 }
 
-.find-me.btn {
+.findme.btn {
   font-family: inherit;
+  opacity: .9;
 }
 
-.find-me.btn,
-.not-on-https,
-.no-geolocation-support,
+.findme.btn,
+.nothttps,
+.nosupport,
 .coordinates {
   font-size: 1.5em;
 }
 
-.not-on-https,
-.no-geolocation-support {
+.nothttps,
+.nosupport {
   display: none;
 }
 
