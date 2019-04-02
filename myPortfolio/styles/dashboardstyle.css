@@ -246,20 +246,20 @@ form {
   margin: 2.5rem auto;
 }
 
-.findme.btn {
+.find-me.btn {
   font-family: inherit;
   opacity: .9;
 }
 
-.findme.btn,
-.nothttps,
-.nosupport,
+.find-me.btn,
+.not-on-https,
+.no-geolocation-support,
 .coordinates {
   font-size: 1.5em;
 }
 
-.nothttps,
-.nosupport {
+.not-on-https,
+.no-geolaction-support {
   display: none;
 }
 
