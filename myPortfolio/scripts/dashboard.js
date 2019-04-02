@@ -80,7 +80,7 @@ $(document).ready(function($) {
         // But you can figure it out :)
 
         // calls google and ask for a method called "maps" to create an image of where we are.
-        var mapLatLng = newgoogle.maps.LatLng(lat, lng);
+        var mapLatLng = google.maps.LatLng(lat, lng);
 
         // Holds the values for the "maps" functions to know how we want the map to be rendered.
         var mapOptions = {
@@ -90,7 +90,7 @@ $(document).ready(function($) {
         };
 
         // Noticed at the end of this line: "mapOptions" is passed into the "map" method?
-        var map = google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        var map = newgoogle.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
         // Holds the value of the device we just asked for it coordinates.   
         var mapMarker = new google.maps.Marker({
