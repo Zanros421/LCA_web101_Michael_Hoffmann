@@ -259,7 +259,7 @@ form {
 }
 
 .not-on-https,
-.no-geolaction-support {
+.no-geolocation-support {
   display: none;
 }
 
