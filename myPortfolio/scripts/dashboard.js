@@ -90,7 +90,7 @@ $(document).ready(function($) {
         };
 
         // Noticed at the end of this line: "mapOptions" is passed into the "map" method?
-        var map = newgoogle.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        var map = google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
         // Holds the value of the device we just asked for it coordinates.   
         var mapMarker = new google.maps.Marker({
