@@ -1,9 +1,21 @@
 body {
     background: rgb(26, 160, 153);
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
 }
 h1 {
-    align-self: center;
-}/*
-#container {
-    align-content: center;
-}*/
+    font-size: 36px;
+    margin-left: 33%;
+}
+p{
+    padding: 10px;
+    font-size: 18px;
+}
+fieldset {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+li {
+    margin-left: 5px;
+}
