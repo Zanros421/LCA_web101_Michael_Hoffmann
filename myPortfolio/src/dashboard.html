@@ -20,6 +20,9 @@
             </script>
         </header>
             <main>
+                <div id="game">
+                    <input type="button" class="gmaebtn" onclick="tunnelClick(1)" value="Tunnels">
+                </div>
                 <div id="main">                
                 <div id="clock">
                     <div class="hours">01</div>
@@ -73,42 +76,56 @@
                     <div class="dates">3</div>
                     <div class="dates">4</div>
                 </div>
-                <div class="containers"> 
+                <!--<div class="containers"> 
                     <form class="form-horizontal">
                         <div class="form-group">
                         <button type="button" class="find-me btn btn-info btn-block">Let us see where you are!</button>
                         </div>
                     </form>
-                    <!--<div class="not-on-https">Must be on HTTPS.</div>-->
+                   <div class="not-on-https">Must be on HTTPS.</div>
                     <div class="no-geolocation-support">Geolocation is not supported by this browser</div>
                     <div class="coordinates">Latitude:<br><b class="latitude">00.000000°</b><br> Longitude:<br><b class="longitude">00.000000°</b></div>
                     <div id="map">
                         <div id="map-canvas"></div>
                     </div>
-                </div> 
+                </div> --> 
             </div>
             </main>
             <aside>aside
                 <div id="container1">
-                <div id="calculator">
-                    <input type="text" class="showing">
-                    <input type="button" class="digitButton" value="7">
-                    <input type="button" class="digitButton" value="8">
-                    <input type="button" class="digitButton" value="9">
-                    <input type="button" class="mathButton" value="+">
-                    <input type="button" class="digitButton" value="4">
-                    <input type="button" class="digitButton" value="5">
-                    <input type="button" class="digitButton" value="6">
-                    <input type="button" class="mathButton" value="-">
-                    <input type="button" class="digitButton" value="1">
-                    <input type="button" class="digitButton" value="2">
-                    <input type="button" class="digitButton" value="3">
-                    <input type="button" class="mathButton" value="*">
-                    <input type="button" class="mathButton" value="C">
-                    <input type="button" class="digitButton" value="0">   
-                    <input type="button" class="mathButton" value="=">
-                    <input type="button" class="mathButton" value="/">
-                </div>
+                <form id="calculator" class="calculator" title="Calculator">
+                    <input id="showing" type="text" name="showing" readonly>
+                    <input type="button" class="digitButton" value="7" onclick="calculator.showing.value += '7'">
+                    <input type="button" class="digitButton" value="8"  onclick="calculator.showing.value += '8'">
+                    <input type="button" class="digitButton" value="9"
+                     onclick="calculator.showing.value += '9'">
+                    <input type="button" class="mathButton" value="+"
+                    onclick="calculator.showing.value += '+'">
+                    <input type="button" class="digitButton" value="4"
+                     onclick="calculator.showing.value += '4'">
+                    <input type="button" class="digitButton" value="5"
+                    onclick="calculator.showing.value += '5'">
+                    <input type="button" class="digitButton" value="6"
+                     onclick="calculator.showing.value += '6'">
+                    <input type="button" class="mathButton" value="-"
+                    onclick="calculator.showing.value += '-'">
+                    <input type="button" class="digitButton" value="1"
+                     onclick="calculator.showing.value += '1'">
+                    <input type="button" class="digitButton" value="2"
+                     onclick="calculator.showing.value += '2'">
+                    <input type="button" class="digitButton" value="3"
+                     onclick="calculator.showing.value += '3'">
+                    <input type="button" class="mathButton" value="*"
+                     onclick="calculator.showing.value += '*'">
+                    <input type="button" class="mathButton" value="C"
+                    onclick="calculator.showing.value = ''">
+                    <input type="button" class="digitButton" value="0"
+                     onclick="calculator.showing.value += '0'">   
+                    <input type="button" class="mathButton" value="="
+                     onclick="calculator.showing.value = eval(calculator.showing.value)">
+                    <input type="button" class="mathButton" value="/"
+                    onclick="calculator.showing.value += '/'">
+                </form>
                 <div id="flexcalculator">
                     <input type="text" class="showing1">
                     <input type="button" class="flexButton" value="7">
@@ -130,8 +147,6 @@
                 </div>
                 </div>
             </aside>
-            <div class="banner">           
-            </div>
         <footer>
             <div>
                 <div id="list_section">
