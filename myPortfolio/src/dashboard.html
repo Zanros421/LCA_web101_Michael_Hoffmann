@@ -20,9 +20,6 @@
             </script>
         </header>
             <main>
-                <div id="game">
-                    <input type="button" class="gmaebtn" onclick="tunnelClick(1)" value="Tunnels">
-                </div>
                 <div id="main">                
                 <div id="clock">
                     <div class="hours">01</div>
@@ -91,6 +88,15 @@
                 </div> --> 
             </div>
             </main>
+            <section>
+                <div id="game">
+                    <button onclick="tunnelsClick(1)">Tunnels</button><br>
+                    Tunnels: <span id="tunnels">0</span><br>
+                    <button onClick="buyMiners()">Buy Miner</button><br>
+                    Miners: <span id="miners">0</span>
+                    Miners Cost: <span id="minersCost">15</span>
+                </div>
+            </section>
             <aside>aside
                 <div id="container1">
                 <form id="calculator" class="calculator" title="Calculator">

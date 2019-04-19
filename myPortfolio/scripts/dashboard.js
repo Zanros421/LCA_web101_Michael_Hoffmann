@@ -16,11 +16,30 @@ $(function() {
     });
   
   });
-var tunnel = 0;
-function tunnelClick(number){
-  tunnel = tunnel + number;
+var tunnels = 0;
+var minerss = 0;
+
+function tunnelsClick(number){
+  tunnels = tunnels + number;
+  document.getElementById("tunnels").innerHTML = tunnelss;
 };
-document.getElementById("tunnel").innerHTML=tunnel;
+  
+function buyMiner(){
+  var minersCost = Math.floor(15 * Math.pow(1.1,miners));
+  if(tunnels >= minersCost){}
+  miners = miners + 1;
+  tunnels = tunnels - minersCost;
+  document.getElementById('miners').innerHTML = miners;
+  document.getElementById('tunnels').innerHTML = tunnels;
+};
+var nextCost = Math.floor(15 * Math.pow(1.1,miners)); 
+document.getElementById('minersCost').innerHTML = nextCost;  //updates the cursor cost for the user
+};
+  
+window.setInterval(function(){
+  tunnelsClick(miners);
+}, 1000);
+
 
   //This is real life?
 // Refactored with jQuery!

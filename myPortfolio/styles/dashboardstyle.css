@@ -13,6 +13,9 @@ main {
     display:flex;
     flex-direction:column;
 }
+section {
+  background-color: #009fc7;
+}
 h1 {
   color: #009fc7;
   flex:1;
