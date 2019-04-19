@@ -11,21 +11,24 @@
 </head>
 <body>
    <header></header>
-    <section id="game-board">
-        <div id="square1" class="piece-block" onclick="placeMark('square1')"></div>
-        <div id="square2" class="piece-block" onclick="placeMark('square2')"></div>
-        <div id="square3" class="piece-block" onclick="placeMark('square3')"></div>
-        <div id="square4" class="piece-block" onclick="placeMark('square4')"></div>
-        <div id="square5" class="piece-block" onclick="placeMark('square5')"></div>
-        <div id="square6" class="piece-block" onclick="placeMark('square6')"></div>
-        <div id="square7" class="piece-block" onclick="placeMark('square7')"></div>
-        <div id="square8" class="piece-block" onclick="placeMark('square8')"></div>
-        <div id="square9" class="piece-block" onclick="placeMark('square9')"></div>
-    </section>
-    <section id="commands">
-        <button id="btnX" name="X" onclick="changeMarkerToX()">X</button>
-        <button id="btnO" name="O" onclick="changeMarkerToO()">O</button>
-    </section>
-
+   <div class="game">
+    <div class="game-title" contenteditable="true">Tic Tac Toe</div>
+    <div class="player" contenteditable="true">
+    Player 1
+    <div style="font-size:30pt;" id="player1" class="selected" contenteditable="true">
+    0
+    </div>
+    </div>
+    
+    <table id="game" class="tictactoe" style="float:left;width:45%;" contenteditable="true">
+    </table>
+    
+    <div class="player" contenteditable="true">
+    Player 2
+    <div id="player2" style="font-size:30pt;" contenteditable="true">0</div>
+    </div>
+    
+    <div class="clear" contenteditable="true"></div>
+    </div>
 </body>
 </html>
