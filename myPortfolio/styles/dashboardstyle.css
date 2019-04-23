@@ -13,78 +13,101 @@ main {
     display:flex;
     flex-direction:column;
 }
+* {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: rgb(77, 70, 70);
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color:#fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+.close {
+  position: absolute;
+  right:0;
+  top:0;
+  padding: 12px 16px 12px 16px;
+}
+.close:hover {
+  background-color: #75140d;
+  color: white;
+}
+.header{
+  background-color:#8d1c14;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#myDiv input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+input
 section {
   background-color: #009fc7;
 }
 h1 {
   color: #009fc7;
   flex:1;
-}
-#list_section {
-  text-align: center;
-}
-
-h2 {
-  color: rgb(13, 245, 214);
-  margin: 0px auto;
-  padding: 20px;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  list-style-type: none;
-  width: 20%;
-  margin: 0px auto;
-  border-radius: 3px;
-  border: 1px solid #000;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-p {
-  /*background-color: #fff;*/
-  color: #000;
-  padding: 10px;
-  display: inline-block;
-  margin: 20px auto 20px auto;
-  width: 80%;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.item {
-  background-color: #fff;
-  color: rgb(0, 0, 0);
-}
-
-input[type='text'] {
-  font-size: 12px;
-  padding: 6px;
-  border: 1px solid #000;
-  border-radius: 3px;
-}
-
-input[type='submit'] {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border-radius: 8px;
-  border: none;
-  padding: 5px;
-}
-
-#newItemButton {
-  display: none;
-}
-
-#itemField {
-  margin-top: 60px;
-  width: 10%;
 }
 aside {
     grid-area: aside;
