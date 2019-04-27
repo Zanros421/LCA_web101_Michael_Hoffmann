@@ -1,28 +1,27 @@
 var tunnels = 0;
 
-function tunnelsClick(number){
-    tunnels = tunnels + number;
-    document.getElementById("tunnels").innerHTML = tunnels;
+function tunnelClick(number){
+  tunnels = tunnels + number;
+  document.getElementById("tunnels").innerHTML = tunnels;
 };
 
 var miners = 0;
 
 function buyMiner(){
-    var minerCost = Math.floor(15 * Math.pow(1.1,miners));
-    if(tunnels >= minerCost){
-        miners = miners + 1;
-    	  miners = miners - minerCost;
-        document.getElementById('miners').innerHTML = miners;
-        document.getElementById('tunnels').innerHTML = tunnels;
+    var minerCost = Math.floor(10 * Math.pow(1.1,miners));
+    if(tunnels >= minerCost){ 
+      miners = miners + 1;
+    	tunnels = tunnels - minerCost;
+      document.getElementById('miners').innerHTML = miners;
+      document.getElementById('tunnels').innerHTML = tunnels;
     };
     var nextCost = Math.floor(10 * Math.pow(1.1,miners));
     document.getElementById('minerCost').innerHTML = nextCost;
-
-window.setInterval(function(){
-	cookieClick(miners);
+};
+window.setInterval(function(){	
+	tunnelClick(miners);	
 }, 1000);
-
-// Create a "close" button and append it to each list item
+//Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -49,7 +48,7 @@ list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
-}, false);
+});
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {

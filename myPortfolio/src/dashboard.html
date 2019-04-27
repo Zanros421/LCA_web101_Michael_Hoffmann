@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../styles/dashboardstyle.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../scripts/dashboard.js"></script>
 </head>
 <body>
     <div class="container">
@@ -77,11 +75,11 @@
             </main>
             <section>
                 <div id="game">
-                    <button onclick="tunnelsClick(1)">Tunnels</button><br>
+                    <button onclick="tunnelClick(1)">Dig</button><br>
 		            Tunnels: <span id="tunnels">0</span><br>
 		            <button onclick="buyMiner()">Buy Miner</button><br>
 		            Miners: <span id="miners">0</span><br>
-		            Miner Cost: <span id="minerCost">15</span>
+		            Miner Cost: <span id="minerCost">10</span>
                 </div>
             </section>
             <aside>aside
@@ -157,5 +155,7 @@
               </ul>           
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/dashboard.js"></script>
 </body>
 </html>
