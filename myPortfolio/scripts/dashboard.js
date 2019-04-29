@@ -20,7 +20,59 @@ function buyMiner(){
 };
 window.setInterval(function(){	
 	tunnelClick(miners);	
-}, 1000);
+}, 1750);
+
+var shovels = 0;
+
+function buyShovel(){
+    var shovelCost = Math.floor(20 * Math.pow(1.1,shovels));
+    if(tunnels >= shovelCost){ 
+      shovels = shovels + 1;
+    	tunnels = tunnels - shovelCost;
+      document.getElementById('shovels').innerHTML = shovels;
+      document.getElementById('tunnels').innerHTML = tunnels;
+    };
+    var nextCost = Math.floor(20 * Math.pow(1.1,shovels));
+    document.getElementById('shovelCost').innerHTML = nextCost;
+};
+window.setInterval(function(){	
+	tunnelClick(shovels);	
+}, 1500);
+
+var pickaxes = 0;
+
+function buyPickaxe(){
+    var pickaxeCost = Math.floor(30 * Math.pow(1.1,pickaxes));
+    if(tunnels >= pickaxeCost){ 
+      pickaxes = pickaxes + 1;
+    	tunnels = tunnels - pickaxeCost;
+      document.getElementById('pickaxes').innerHTML = pickaxes;
+      document.getElementById('tunnels').innerHTML = tunnels;
+    };
+    var nextCost = Math.floor(30 * Math.pow(1.1,pickaxes));
+    document.getElementById('pickaxeCost').innerHTML = nextCost;
+};
+window.setInterval(function(){	
+	tunnelClick(pickaxes);	
+}, 1250);
+
+var excavators = 0;
+
+function buyExcavator(){
+    var excavatorCost = Math.floor(50 * Math.pow(1.1,excavators));
+    if(tunnels >= excavatorCost){ 
+      excavators = excavators + 1;
+    	tunnels = tunnels - excavatorCost;
+      document.getElementById('excavators').innerHTML = excavators;
+      document.getElementById('tunnels').innerHTML = tunnels;
+    };
+    var nextCost = Math.floor(50 * Math.pow(1.1,excavators));
+    document.getElementById('minerCost').innerHTML = nextCost;
+};
+window.setInterval(function(){	
+	tunnelClick(excavators);	
+}, 950);
+
 //Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
